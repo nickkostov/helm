@@ -6,3 +6,6 @@ Repository containing guidelines for helm
 ```bash
 helm create mychartname
 ```
+
+# NB:
+Do not template namespace in chart. Not an acceptable value.
