@@ -13,4 +13,3 @@ helm get values RELEASE_NAME [flags]
 ```
 
 # NB:
-Do not template namespace in chart. Not an acceptable value.
