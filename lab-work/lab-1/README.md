@@ -31,6 +31,16 @@ Apply the service:
 kubectl apply -f frontend-service.yaml
 ```
 
+Validate the service:
+
+```bash
+kubectl get svc
+```
+
+Delete the service: 
+```bash
+kubectl delete -f frontend-service.yaml
+```
 ### Option 1
 
 - Port forwarding:
@@ -67,3 +77,19 @@ spec:
 ### Option 3 
 
 - Configure the ingress (install nginx ingress controller) (too lazy following a guideline)
+
+Apply the ingress:
+```bash
+kubectl apply -f ingress.yaml
+```
+
+Validate the ingress:
+
+```bash
+kubectl get ing
+```
+
+Delete the ingress:
+```bash
+kubectl delete -f ingress.yaml
+```
