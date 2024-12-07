@@ -22,8 +22,23 @@ kubectl get deployment
 ```
 ## Accessing the deployment
 
-> [!TIP]
+> [!IMPORTANT]
 > Because I am **not using ingress controller**, I can not access the set up using it. (example is given if someone wants to use it)
 
+Apply the service:
+
+```bash
+kubectl apply -f frontend-service.yaml
+```
+
 ### Option 1
->![]
+
+- Port forwarding:
+
+```bash
+kubectl port-forward deployment/frontend 8080:4200
+```
+
+```bash
+kubectl port-forward pod/<pod-name> 8080:4200
+```
