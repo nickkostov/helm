@@ -63,3 +63,7 @@ spec:
   selector:
     app: frontend
 ```
+
+### Option 3 
+
+- Configure the ingress (install nginx ingress controller)
