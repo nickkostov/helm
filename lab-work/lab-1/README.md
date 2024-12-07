@@ -66,4 +66,4 @@ spec:
 
 ### Option 3 
 
-- Configure the ingress (install nginx ingress controller)
+- Configure the ingress (install nginx ingress controller) (too lazy following a guideline)
