@@ -22,5 +22,8 @@ kubectl get deployment
 ```
 ## Accessing the deployment
 
-> [!INFO]
+> [!TIP]
 > Because I am using no ingress controller, I can not access the set up using it. (example is given if someone wants to use it)
+
+### Option 1
+>![]
