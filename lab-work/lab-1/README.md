@@ -42,3 +42,24 @@ kubectl port-forward deployment/frontend 8080:4200
 ```bash
 kubectl port-forward pod/<pod-name> 8080:4200
 ```
+
+### Option 2
+
+- Type: LoadBalancer service:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: frontend
+  name: frontend
+spec:
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 4200
+  type: LoadBalancer
+  selector:
+    app: frontend
+```
